@@ -1,8 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
-const PORT = 3000;
-//require("dotenv").config();
+const dotenv = require("dotenv");
+dotenv.config();
 //const TOKEN="7c87f27beda81ce7572c6851f5631a54";
 const app = express();
 // Using body parser
@@ -42,6 +42,6 @@ app.post("/", (req, res) => {
   });
 });
 
-app.listen(PORT, () => {
-  console.log(`Server listening on port ${PORT} ...`);
+app.listen(process.env.PORT||3000, () => {
+  console.log(`Server listening  ...`);
 });
