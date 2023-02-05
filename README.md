@@ -1,6 +1,5 @@
 # My Weather Station
-This is my solution for the Web Bootcamp.
-At this stage EJS was not introduced, that is why i return a complete HTML in String format.
+User gets all Weather details of city by entering their city name
 ## Run the solution
 1.  Run ``` npm install ```
 2.  Add a .env file in which you specify a variable TOKEN that contains your OpenWeatherMap token
